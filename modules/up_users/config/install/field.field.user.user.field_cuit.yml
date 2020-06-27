@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_cuit
+  module:
+    - user
+id: user.user.field_cuit
+field_name: field_cuit
+entity_type: user
+bundle: user
+label: CUIT
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,90 @@
+{
+  "name": "drupal/unionplatform_backend",
+  "description": "Modules needed for a unionplatform backend.",
+  "type": "drupal-module",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://gcoop-libre.gitlab.io/unionplatform",
+  "support": {
+    "issues": "https://gitlab.com/gcoop-libre/unionplatform-backend",
+    "source": "https://gitlab.com/gcoop-libre/unionplatform-backend"
+  },
+  "require": {
+    "composer/installers": "^1.2",
+    "cweagans/composer-patches": "^1.6",
+    "drupal-composer/drupal-scaffold": "^2.4",
+    "drupal/advancedqueue": "^1.0@RC",
+    "drupal/auto_entitylabel": "^3.0@beta",
+    "drupal/discourse_sso": "^1.0",
+    "drupal/features": "^3.5",
+    "drupal/field_group": "^3.0",
+    "drupal/firebase": "^2.0",
+    "drupal/geolocation": "^1.11",
+    "drupal/node_view_permissions": "^1.2",
+    "drupal/pathauto": "^1.0",
+    "drupal/redirect": "^1.0@beta",
+    "drupal/rest_password_reset": "^0.0.1",
+    "drupal/rest_views": "^2.0",
+    "drupal/state_machine": "^1.0",
+    "drupal/token": "^1.0",
+    "roave/security-advisories": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "drupal/rest_password_reset",
+        "version": "0.0.1",
+        "type": "drupal-module",
+        "source": {
+          "url": "https://git.drupalcode.org/sandbox/mpv-3154004.git",
+          "type": "git",
+          "reference": "8.x-1.x"
+        }
+      }
+    }
+  ],
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "process-timeout": 2000
+  },
+  "scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
+  },
+  "extra": {
+    "patches-file": "composer.patches.json",
+    "installer-paths": {
+      "docroot/core": [
+        "type:drupal-core"
+      ],
+      "docroot/libraries/{$name}": [
+        "type:drupal-library"
+      ],
+      "docroot/modules/custom/{$name}": [
+        "type:drupal-custom-module"
+      ],
+      "docroot/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "docroot/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "docroot/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "build/drush/contrib/{$name}": [
+        "type:drupal-drush"
+      ]
+    }
+  }
+}

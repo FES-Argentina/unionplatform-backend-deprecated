@@ -1,0 +1,23 @@
+<?php
+
+/**
+ * @file
+ * Contains up_front_page.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function up_front_page_theme() {
+  return [
+    'up_front_page' => [
+      'variables' => [
+        'image' => NULL,
+        'text' => NULL,
+        'name' => NULL,
+      ],
+    ],
+  ];
+}

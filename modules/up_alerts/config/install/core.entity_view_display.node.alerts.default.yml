@@ -1,0 +1,65 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.alerts.body
+    - field.field.node.alerts.field_alert_type
+    - field.field.node.alerts.field_company
+    - field.field.node.alerts.field_date
+    - field.field.node.alerts.field_location
+    - node.type.alerts
+  module:
+    - geolocation
+    - options
+    - text
+    - user
+id: node.alerts.default
+targetEntityType: node
+bundle: alerts
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_alert_type:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_company:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_date:
+    weight: 105
+    label: above
+    settings:
+      date_format: medium
+      custom_date_format: ''
+      timezone: ''
+    third_party_settings: {  }
+    type: timestamp
+    region: content
+  field_location:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: geolocation_latlng
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

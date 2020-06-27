@@ -1,0 +1,13 @@
+name: Media
+description: 'Provides Media entities and related configuration.'
+type: module
+core: 8.x
+dependencies:
+  - drupal:field
+  - drupal:file
+  - drupal:image
+  - drupal:media
+  - drupal:media_library
+  - drupal:menu_ui
+  - drupal:path
+package: UnionPlatform

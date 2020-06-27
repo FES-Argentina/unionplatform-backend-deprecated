@@ -1,0 +1,38 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.alerts.body
+    - field.field.node.alerts.field_alert_type
+    - field.field.node.alerts.field_company
+    - field.field.node.alerts.field_date
+    - field.field.node.alerts.field_location
+    - node.type.alerts
+  module:
+    - text
+    - user
+id: node.alerts.teaser
+targetEntityType: node
+bundle: alerts
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_alert_type: true
+  field_company: true
+  field_date: true
+  field_location: true
+  langcode: true

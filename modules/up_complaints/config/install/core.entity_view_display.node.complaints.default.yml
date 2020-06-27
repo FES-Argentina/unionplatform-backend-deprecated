@@ -1,0 +1,107 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.complaints.field_address_complaint
+    - field.field.node.complaints.field_company_complaint
+    - field.field.node.complaints.field_complaint_image
+    - field.field.node.complaints.field_description
+    - field.field.node.complaints.field_email
+    - field.field.node.complaints.field_firstname
+    - field.field.node.complaints.field_lastname
+    - field.field.node.complaints.field_phonenumber
+    - field.field.node.complaints.field_problem
+    - field.field.node.complaints.field_seniority
+    - field.field.node.complaints.field_tasks
+    - node.type.complaints
+  module:
+    - options
+    - user
+id: node.complaints.default
+targetEntityType: node
+bundle: complaints
+mode: default
+content:
+  field_address_complaint:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_company_complaint:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_description:
+    weight: 101
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_email:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_firstname:
+    weight: 106
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_lastname:
+    weight: 105
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_phonenumber:
+    weight: 107
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_problem:
+    weight: 108
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_seniority:
+    weight: 111
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_tasks:
+    weight: 110
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_complaint_image: true
+  langcode: true

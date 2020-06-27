@@ -1,0 +1,10 @@
+{
+  "patches": {
+    "drupal/discourse_sso": {
+      "3019548: SSO breaks if User Picture field is removed from User entity": "https://www.drupal.org/files/issues/2019-10-09/3019548-11.discourse_sso.SSO-breaks-if-User-Picture-field-is-removed-from-User-entity.patch"
+    },
+    "drupal/firebase": {
+      "3013940: Return failure information": "https://git.drupalcode.org/project/firebase/commit/8ac5e38.patch"
+    }
+  }
+}

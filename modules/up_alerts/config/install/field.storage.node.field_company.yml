@@ -1,0 +1,32 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_company
+field_name: field_company
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: cabify
+      label: Cabify
+    -
+      value: glovo
+      label: Glovo
+    -
+      value: rappi
+      label: Rappi
+    -
+      value: uber
+      label: Uber
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,17 @@
+up_front_page.front_page_settings_form:
+  path: '/admin/union-platform/front-page'
+  defaults:
+    _form: '\Drupal\up_front_page\Form\FrontPageSettingsForm'
+    _title: 'Front page settings'
+  requirements:
+    _access: 'TRUE'
+  options:
+    _admin_route: TRUE
+
+up_front_page.front_page_controller_frontPage:
+  path: '/union-platform/front'
+  defaults:
+    _controller: '\Drupal\up_front_page\Controller\FrontPageController::frontPage'
+    _title: 'Front page'
+  requirements:
+    _permission: 'access content'

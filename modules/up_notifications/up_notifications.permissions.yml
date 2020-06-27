@@ -1,0 +1,29 @@
+add own device token:
+  title: 'Add own device token'
+
+add push notification entities:
+  title: 'Create new Push notification entities'
+  description: 'Allow to create Push notification entities that can be sent to users devices.'
+  restrict access: true
+
+administer push notification entities:
+  title: 'Administer Push notification entities'
+  description: 'Allow to access the administration form to configure Push notification entities.'
+  restrict access: true
+
+delete published push notification entities:
+  title: 'Delete Push notification entities'
+
+delete unpublished push notification entities:
+  title: 'Delete Push notification entities'
+  restrict access: true
+
+edit published push notification entities:
+  title: 'Edit Push notification entities'
+
+edit unpublished push notification entities:
+  title: 'Edit Push notification entities'
+  restrict access: true
+
+view push notification entities:
+  title: 'View published Push notification entities'

@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_phonenumber
+    - node.type.complaints
+  module:
+    - telephone
+id: node.complaints.field_phonenumber
+field_name: field_phonenumber
+entity_type: node
+bundle: complaints
+label: Phonenumber
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

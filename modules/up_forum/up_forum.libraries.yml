@@ -1,0 +1,7 @@
+webview-credentials:
+  version: 1.x
+  js:
+    js/webview-credentials.js: {}
+  dependencies:
+    - core/drupal
+    - core/drupalSettings

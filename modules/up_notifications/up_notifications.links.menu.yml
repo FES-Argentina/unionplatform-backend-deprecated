@@ -1,0 +1,20 @@
+---
+entity.push_notification.collection:
+  title: 'Notifications'
+  route_name: entity.push_notification.collection
+  description: 'Manage and send push notifications.'
+  parent: unionplatform.admin
+  weight: 10
+
+up_notifications.firebase_settings:
+  title: 'Firebase settings'
+  description: 'Configure firebase for sending push notifications.'
+  route_name: firebase.configuration
+  parent: unionplatform.admin
+  weight: 11
+
+push_notification.admin.structure.settings:
+  title: 'Push notification settings'
+  description: 'Configure Push notification entities.'
+  route_name: push_notification.settings
+  parent: system.admin_structure

@@ -1,0 +1,19 @@
+name: News
+type: module
+core: 8.x
+dependencies:
+  - up_media:up_media
+  - drupal:field
+  - drupal:file
+  - drupal:language
+  - drupal:media
+  - drupal:media_library
+  - drupal:menu_ui
+  - drupal:node
+  - drupal:path
+  - drupal:rest
+  - drupal:serialization
+  - drupal:text
+  - drupal:user
+  - drupal:views
+package: UnionPlatform

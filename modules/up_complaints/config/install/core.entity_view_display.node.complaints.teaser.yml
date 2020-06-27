@@ -1,0 +1,42 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.complaints.field_address_complaint
+    - field.field.node.complaints.field_company_complaint
+    - field.field.node.complaints.field_complaint_image
+    - field.field.node.complaints.field_description
+    - field.field.node.complaints.field_email
+    - field.field.node.complaints.field_firstname
+    - field.field.node.complaints.field_lastname
+    - field.field.node.complaints.field_phonenumber
+    - field.field.node.complaints.field_problem
+    - field.field.node.complaints.field_seniority
+    - field.field.node.complaints.field_tasks
+    - node.type.complaints
+  module:
+    - user
+id: node.complaints.teaser
+targetEntityType: node
+bundle: complaints
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_address_complaint: true
+  field_company_complaint: true
+  field_complaint_image: true
+  field_description: true
+  field_email: true
+  field_firstname: true
+  field_lastname: true
+  field_phonenumber: true
+  field_problem: true
+  field_seniority: true
+  field_tasks: true
+  langcode: true

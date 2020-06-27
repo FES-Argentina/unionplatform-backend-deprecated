@@ -1,0 +1,22 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.alerts
+  module:
+    - text
+id: node.alerts.body
+field_name: body
+entity_type: node
+bundle: alerts
+label: Description
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

@@ -1,0 +1,29 @@
+<?php
+
+/**
+ * @file
+ * Install hooks for up_notifications.
+ */
+
+/**
+ * Implements hook_uninstall().
+ */
+function up_notifications_uninstall() {
+  /** @var \Drupal\Core\Config\ConfigFactoryInterface $configFactory */
+  $configFactory = \Drupal::configFactory();
+  $logger = \Drupal::logger('up_notifications');
+
+  $items = [
+    'field.field.user.user.field_device_tokens',
+    'field.storage.user.field_device_tokens',
+  ];
+
+  foreach ($items as $item) {
+    try {
+      $configFactory->getEditable($item)->delete();
+    }
+    catch (\Exception $e) {
+      $logger->warning(sprintf('Unable to uninstall config: %s.', $item));
+    }
+  }
+}

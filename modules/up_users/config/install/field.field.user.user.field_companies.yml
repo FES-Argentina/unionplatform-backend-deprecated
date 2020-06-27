@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_companies
+  module:
+    - options
+    - user
+id: user.user.field_companies
+field_name: field_companies
+entity_type: user
+bundle: user
+label: Companies
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

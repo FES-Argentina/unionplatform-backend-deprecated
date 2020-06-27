@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+name: Theme
+vid: theme
+description: 'Information type'
+weight: 0

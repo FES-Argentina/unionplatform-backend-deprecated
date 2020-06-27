@@ -1,0 +1,14 @@
+up_forum.admin_settings:
+  path: '/admin/union-platform/forum'
+  defaults:
+    _form: '\Drupal\up_forum\Form\UPForumConfigurationForm'
+    _title: 'Forum settings'
+  requirements:
+    _permission: 'administer forum settings'
+up_forum.discourse_auto_login:
+  path: '/discourse_autologin'
+  defaults:
+    _controller: '\Drupal\up_forum\Controller\DiscourseAutoLoginController::getCredentials'
+    _title: 'Discourse autologin'
+  requirements:
+    _permission: 'try to login with discourse'

@@ -1,0 +1,7 @@
+unionplatform.admin:
+  path: '/admin/union-platform'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Union Platform'
+  requirements:
+    _permission: 'view unionplatform config menu'

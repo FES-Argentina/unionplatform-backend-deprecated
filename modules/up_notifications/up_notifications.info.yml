@@ -1,0 +1,9 @@
+name: 'Notifications'
+type: module
+description: 'Send notifications to app users through firebase cloud messaging.'
+core: 8.x
+package: 'UnionPlatform'
+dependencies:
+  - advancedqueue:advancedqueue
+  - firebase:firebase
+  - state_machine:state_machine

@@ -1,0 +1,8 @@
+name: 'Forum'
+type: module
+description: 'Integration between the app and discourse.'
+core: 8.x
+package: 'UnionPlatform'
+configure: up_forum.admin_settings
+dependencies:
+  - discourse_sso:discourse_sso

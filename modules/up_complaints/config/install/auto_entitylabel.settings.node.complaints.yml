@@ -1,0 +1,6 @@
+status: 1
+pattern: 'Complaint [node:nid]: [node:field_problem:value]'
+escape: false
+dependencies:
+  config:
+    - node.type.complaints

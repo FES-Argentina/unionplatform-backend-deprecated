@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_device_tokens
+  module:
+    - user
+id: user.user.field_device_tokens
+field_name: field_device_tokens
+entity_type: user
+bundle: user
+label: 'Device tokens'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

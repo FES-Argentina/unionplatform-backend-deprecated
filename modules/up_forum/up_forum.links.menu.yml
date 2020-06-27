@@ -1,0 +1,6 @@
+up_forum.admin_settings:
+  title: 'Forum settings'
+  route_name: up_forum.admin_settings
+  description: 'Configure Forum'
+  parent: unionplatform.admin
+  weight: 10

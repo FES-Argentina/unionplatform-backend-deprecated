@@ -1,0 +1,7 @@
+up_front_page.admin_settings:
+  title: 'Front page settings'
+  route_name: up_front_page.front_page_settings_form
+  description: 'Configure front page'
+  parent: unionplatform.admin
+  weight: 10
+

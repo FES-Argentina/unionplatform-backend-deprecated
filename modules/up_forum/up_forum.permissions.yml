@@ -1,0 +1,7 @@
+try to login with discourse:
+  title: 'Try to login with discourse'
+
+administer forum settings:
+  title: 'Administer forum settings'
+  description: 'Administer integration with the Discourse instance for the app.'
+  restrict access: true

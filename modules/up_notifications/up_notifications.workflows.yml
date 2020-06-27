@@ -1,0 +1,22 @@
+notification:
+  id: notification
+  group: up_notifications
+  label: 'Default'
+  states:
+    draft:
+      label: 'Draft'
+    sending:
+      label: 'Sending'
+    processed:
+      label: 'Processed'
+  transitions:
+    send:
+      label: 'Send notification'
+      from:
+        - draft
+      to: sending
+    complete:
+      label: 'Set notification as completed'
+      from:
+        - sending
+      to: processed

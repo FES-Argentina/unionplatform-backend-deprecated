@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address_complaint
+    - node.type.complaints
+id: node.complaints.field_address_complaint
+field_name: field_address_complaint
+entity_type: node
+bundle: complaints
+label: Address
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

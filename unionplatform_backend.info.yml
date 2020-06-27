@@ -1,0 +1,48 @@
+name: 'UnionPlatform Backend'
+type: module
+core: 8.x
+description: 'Backend for unionplatform apps.'
+dependencies:
+  - captcha:captcha
+  - captcha:image_captcha
+  - ctools:ctools
+  - ctools:ctools_views
+  - drupal:block
+  - drupal:block_content
+  - drupal:ckeditor
+  - drupal:config
+  - drupal:datetime
+  - drupal:datetime_range
+  - drupal:editor
+  - drupal:field
+  - drupal:file
+  - drupal:filter
+  - drupal:hal
+  - drupal:image
+  - drupal:language
+  - drupal:link
+  - drupal:locale
+  - drupal:node
+  - drupal:options
+  - drupal:path
+  - drupal:rest
+  - drupal:serialization
+  - drupal:system
+  - drupal:taxonomy
+  - drupal:telephone
+  - drupal:text
+  - drupal:user
+  - drupal:views
+  - features:features
+  - node_view_permissions:node_view_permissions
+  - rest_password_reset:rest_password_reset
+  - up_alerts:up_alerts
+  - up_complaints:up_complaints
+  - up_documents:up_documents
+  - up_forum:up_forum
+  - up_front_page:up_front_page
+  - up_information:up_information
+  - up_media:up_media
+  - up_news:up_news
+  - up_notifications:up_notifications
+  - up_users:up_users

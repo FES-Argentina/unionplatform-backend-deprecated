@@ -1,0 +1,12 @@
+---
+entity.push_notification.add_form:
+  route_name: entity.push_notification.add_form
+  title: 'Add Push notification'
+  appears_on:
+    - entity.push_notification.collection
+entity.push_notification.send_notification_form:
+  route_name: entity.push_notification.send_notification_form
+  title: 'Send notification'
+  weight: 30
+  appears_on:
+    - entity.push_notification.canonical

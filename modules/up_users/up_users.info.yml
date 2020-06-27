@@ -1,0 +1,17 @@
+name: Users
+type: module
+core: 8.x
+dependencies:
+  - drupal:datetime
+  - drupal:field
+  - drupal:file
+  - drupal:hal
+  - drupal:options
+  - drupal:path
+  - drupal:rest
+  - drupal:serialization
+  - drupal:telephone
+  - drupal:user
+  - drupal:views
+package: UnionPlatform
+core_incompatible: false

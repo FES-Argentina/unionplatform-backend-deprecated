@@ -1,0 +1,54 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.push_notification.push_notification.field_notification_body
+    - field.field.push_notification.push_notification.field_notification_subject
+  module:
+    - up_notifications
+    - options
+    - user
+id: push_notification.push_notification.default
+targetEntityType: push_notification
+bundle: push_notification
+mode: default
+content:
+  field_notification_body:
+    type: basic_string
+    weight: 2
+    region: content
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+  field_notification_subject:
+    type: string
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  name:
+    label: hidden
+    type: string
+    weight: 0
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  state:
+    label: inline
+    type: list_default
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  user_id:
+    label: inline
+    type: author
+    weight: 3
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

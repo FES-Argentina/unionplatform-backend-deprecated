@@ -1,0 +1,10 @@
+---
+services:
+  up_notifications.devices:
+    class: Drupal\up_notifications\SubscribedDevices
+    arguments: ['@database', '@state']
+  up_notifications.workflow_transition_subscriber:
+    class: Drupal\up_notifications\EventSubscriber\WorkflowTransitionEventSubscriber
+    arguments: ['@entity_type.manager', '@logger.factory']
+    tags:
+      - { name: event_subscriber }

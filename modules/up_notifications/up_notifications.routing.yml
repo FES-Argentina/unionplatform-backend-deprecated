@@ -1,0 +1,13 @@
+---
+entity.push_notification.send_notification_form:
+  path: '/admin/union-platform/push_notification/{push_notification}/send'
+  defaults:
+    _entity_form: 'push_notification.send_notification'
+  requirements:
+    push_notification: \d+
+    _entity_access: 'push_notification.send_notification'
+  options:
+    _admin_route: TRUE
+    parameters:
+      push_notification:
+        type: entity:push_notification

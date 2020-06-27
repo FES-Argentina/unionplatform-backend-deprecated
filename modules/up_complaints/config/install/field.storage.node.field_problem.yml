@@ -1,0 +1,50 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_problem
+field_name: field_problem
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: accident
+      label: 'I had an accident'
+    -
+      value: block
+      label: 'They blocked me'
+    -
+      value: fine
+      label: 'I was fined'
+    -
+      value: suspension
+      label: 'I was suspended'
+    -
+      value: rate_drop
+      label: 'The acceptance rate fell without reason'
+    -
+      value: theft
+      label: 'I was robbed while working'
+    -
+      value: mobbing
+      label: 'I suffered workplace harassment'
+    -
+      value: sexual_harassment
+      label: 'I suffered sexual harassment'
+    -
+      value: mistreatment
+      label: 'I suffered mistreatment'
+    -
+      value: other
+      label: Others
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

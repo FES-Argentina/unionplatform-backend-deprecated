@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_company_complaint
+    - node.type.complaints
+  module:
+    - options
+id: node.complaints.field_company_complaint
+field_name: field_company_complaint
+entity_type: node
+bundle: complaints
+label: Company
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

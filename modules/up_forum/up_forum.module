@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Contains up_forum.module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function up_forum_theme($existing, $type, $theme, $path) {
+  return [
+    'page__discourse_autologin' => [
+      'template' => 'page--discourse-autologin',
+      'base hook' => 'page',
+    ],
+  ];
+}

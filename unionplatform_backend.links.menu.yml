@@ -1,0 +1,6 @@
+unionplatform.admin:
+  title: 'Union Platform'
+  route_name: unionplatform.admin
+  parent: system.admin
+  description: 'Union platform settings and actions.'
+  weight: -10

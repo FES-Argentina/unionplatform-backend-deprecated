@@ -1,0 +1,47 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.documents.body
+    - field.field.node.documents.field_file
+    - field.field.node.documents.field_summary_docs
+    - node.type.documents
+  module:
+    - text
+    - user
+id: node.documents.default
+targetEntityType: node
+bundle: documents
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_file:
+    type: entity_reference_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_summary_docs:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true

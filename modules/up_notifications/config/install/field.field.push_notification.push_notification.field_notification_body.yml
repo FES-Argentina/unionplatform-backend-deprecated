@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.push_notification.field_notification_body
+  module:
+    - up_notifications
+id: push_notification.push_notification.field_notification_body
+field_name: field_notification_body
+entity_type: push_notification
+bundle: push_notification
+label: Body
+description: 'The notification message (shown on the device).'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

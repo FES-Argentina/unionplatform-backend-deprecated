@@ -1,0 +1,3 @@
+up_notifications:
+  label: Notifications
+  entity_type: push_notification

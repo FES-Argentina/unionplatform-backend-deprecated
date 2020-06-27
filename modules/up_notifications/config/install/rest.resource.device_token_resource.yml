@@ -1,0 +1,19 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - up_notifications
+    - hal
+    - serialization
+    - user
+id: device_token_resource
+plugin_id: device_token_resource
+granularity: resource
+configuration:
+  methods:
+    - POST
+  formats:
+    - hal_json
+    - json
+  authentication:
+    - cookie

@@ -1,0 +1,5 @@
+name: 'Front page'
+type: module
+description: 'Set a simple front page with a logo and small text.'
+core: 8.x
+package: 'UnionPlatform'

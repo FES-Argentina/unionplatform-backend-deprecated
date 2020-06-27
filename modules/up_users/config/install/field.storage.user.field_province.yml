@@ -1,0 +1,92 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - options
+    - user
+id: user.field_province
+field_name: field_province
+entity_type: user
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: Buenos_Aires
+      label: 'Buenos Aires'
+    -
+      value: Ciudad_de_Buenos_Aires
+      label: 'Ciudad de Buenos Aires'
+    -
+      value: Catamarca
+      label: Catamarca
+    -
+      value: Chaco
+      label: Chaco
+    -
+      value: Chubut
+      label: Chubut
+    -
+      value: Córdoba
+      label: Córdoba
+    -
+      value: Corrientes
+      label: Corrientes
+    -
+      value: Entre_Ríos
+      label: 'Entre Ríos'
+    -
+      value: Formosa
+      label: Formosa
+    -
+      value: Jujuy
+      label: Jujuy
+    -
+      value: La_Pampa
+      label: 'La Pampa'
+    -
+      value: La_Rioja
+      label: 'La Rioja'
+    -
+      value: Mendoza
+      label: Mendoza
+    -
+      value: Misiones
+      label: Misiones
+    -
+      value: Neuquén
+      label: Neuquén
+    -
+      value: Río_Negro
+      label: 'Río Negro'
+    -
+      value: Salta
+      label: Salta
+    -
+      value: San_Juan
+      label: 'San Juan'
+    -
+      value: San_Luis
+      label: 'San Luis'
+    -
+      value: Santa_Cruz
+      label: 'Santa Cruz'
+    -
+      value: Santa_Fe
+      label: 'Santa Fe'
+    -
+      value: Santiago_del_Estero
+      label: 'Santiago del Estero'
+    -
+      value: Tierra_del_Fuego
+      label: 'Tierra del Fuego'
+    -
+      value: Tucumán
+      label: Tucumán
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

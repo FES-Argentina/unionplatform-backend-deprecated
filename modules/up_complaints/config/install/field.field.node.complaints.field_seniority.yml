@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_seniority
+    - node.type.complaints
+  module:
+    - options
+id: node.complaints.field_seniority
+field_name: field_seniority
+entity_type: node
+bundle: complaints
+label: Seniority
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
