@@ -28,7 +28,7 @@ display:
       access:
         type: perm
         options:
-          perm: 'access content'
+          perm: 'access rest content'
       cache:
         type: tag
         options: {  }
@@ -490,7 +490,8 @@ display:
           field_api_classes: false
           plugin_id: field
       relationships: {  }
-      auth: {  }
+      auth:
+        - cookie
       sorts:
         created:
           id: created
