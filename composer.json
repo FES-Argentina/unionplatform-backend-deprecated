@@ -6,8 +6,8 @@
   "license": "GPL-2.0+",
   "homepage": "https://gcoop-libre.gitlab.io/unionplatform",
   "support": {
-    "issues": "https://gitlab.com/gcoop-libre/unionplatform-backend",
-    "source": "https://gitlab.com/gcoop-libre/unionplatform-backend"
+    "issues": "https://gitlab.com/gcoop-libre/unionplatform_backend",
+    "source": "https://gitlab.com/gcoop-libre/unionplatform_backend"
   },
   "require": {
     "composer/installers": "^1.2",
