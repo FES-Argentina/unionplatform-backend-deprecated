@@ -33,19 +33,6 @@
     {
       "type": "composer",
       "url": "https://packages.drupal.org/8"
-    },
-    {
-      "type": "package",
-      "package": {
-        "name": "drupal/rest_password_reset",
-        "version": "0.0.1",
-        "type": "drupal-module",
-        "source": {
-          "url": "https://git.drupalcode.org/sandbox/mpv-3154004.git",
-          "type": "git",
-          "reference": "8.x-1.x"
-        }
-      }
     }
   ],
   "conflict": {
