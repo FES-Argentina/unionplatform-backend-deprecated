@@ -8,7 +8,6 @@ dependencies:
   - drupal:geolocation
   - drupal:language
   - drupal:media_library
-  - drupal:menu_ui
   - drupal:node
   - drupal:options
   - drupal:path
