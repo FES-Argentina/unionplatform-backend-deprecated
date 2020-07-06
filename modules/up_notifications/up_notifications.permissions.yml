@@ -12,18 +12,18 @@ administer push notification entities:
   restrict access: true
 
 delete published push notification entities:
-  title: 'Delete Push notification entities'
+  title: 'Delete published Push notification entities'
+  restrict access: true
 
 delete unpublished push notification entities:
-  title: 'Delete Push notification entities'
-  restrict access: true
+  title: 'Delete unpublished Push notification entities'
 
 edit published push notification entities:
-  title: 'Edit Push notification entities'
+  title: 'Edit published Push notification entities'
+  restrict access: true
 
 edit unpublished push notification entities:
-  title: 'Edit Push notification entities'
-  restrict access: true
+  title: 'Edit unpublished Push notification entities'
 
 view push notification entities:
   title: 'View published Push notification entities'
