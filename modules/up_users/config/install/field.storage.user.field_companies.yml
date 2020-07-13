@@ -22,6 +22,18 @@ settings:
     -
       value: uber
       label: Uber
+    -
+      value: beat
+      label: Beat
+    -
+      value: pedidosya
+      label: PedidosYa
+    -
+      value: uber_eats
+      label: Uber Eats
+    -
+      value: other
+      label: Otra
   allowed_values_function: ''
 module: options
 locked: false
