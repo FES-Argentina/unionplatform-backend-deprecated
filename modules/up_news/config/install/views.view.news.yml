@@ -20,7 +20,6 @@ description: ''
 tag: ''
 base_table: node_field_data
 base_field: nid
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -139,6 +138,8 @@ display:
           id: status
           expose:
             operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
           group: 1
         type:
           id: type
@@ -149,6 +150,9 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
       sorts:
         created:
           id: created
@@ -228,10 +232,26 @@ display:
       display_extenders: {  }
       path: news
       pager:
-        type: some
+        type: full
         options:
           items_per_page: 10
           offset: 0
+          id: 0
+          total_pages: null
+          tags:
+            previous: '‹ Anterior'
+            next: 'Siguiente >'
+            first: '« Primero'
+            last: 'Último »'
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Items per page'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- All -'
+            offset: true
+            offset_label: Offset
+          quantity: 9
       style:
         type: serializer
         options:
@@ -591,6 +611,7 @@ display:
         - 'languages:language_interface'
         - request_format
         - url
+        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags:
