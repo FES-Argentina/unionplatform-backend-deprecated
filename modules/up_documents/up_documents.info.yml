@@ -2,7 +2,6 @@ name: Documents
 type: module
 core: 8.x
 dependencies:
-  - up_media:up_media
   - drupal:field
   - drupal:file
   - drupal:language
@@ -15,4 +14,5 @@ dependencies:
   - drupal:text
   - drupal:user
   - drupal:views
+  - up_media:up_media
 package: UnionPlatform
