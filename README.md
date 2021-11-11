@@ -1,4 +1,6 @@
-# Union Platform Backend
+# This repo is deprecated. We are working on a new backend for this app.
+
+## Union Platform Backend
 
 > Drupal companion for [UnionPlatform][0].
 
@@ -9,7 +11,7 @@ powered backend. It was developed with the support of [FES Argentina][0].
 
 This is a set of modules to set up a drupal backend for the application.
 
-## Installation
+### Installation
 
 You need to add this repository to your `composer.json`
 
